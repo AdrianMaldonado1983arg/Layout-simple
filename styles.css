@@ -13,6 +13,10 @@ nav{
 	background-color: blue;
 	color: white;
 	font-weight: bold;
+	font-family: 'Odibee Sans', cursive;
+	letter-spacing: 0.25em;
+	word-spacing: 0.25em;
+
 }
 ul{
 	float: right;
@@ -48,4 +52,12 @@ footer{
 	width: 20%;
 	text-align: center;
 	padding-top: 2.5%;
+}
+a{
+	color: white;
+	text-decoration: none;
+	padding-bottom: 3px;
+}
+a:hover{
+	text-decoration: underline;
 }
