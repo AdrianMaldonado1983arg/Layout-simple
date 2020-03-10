@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+
+    <style>
+        /*COMENTARIOS*/
+        *{
+            /*PROPIEDADES PARA TODOS LOS ELEMENTOS/ ETIQUETAS, PUEDO USARLO PARA SACAR ESTILOS POR DEFECTO */
+            padding:0; /*padding margenes interiores*/
+            margin:0; /*margen exterior*/
+            list-style:none;
+            text-decoration:none;
+        }
+        /* CONTENEDOR QUE CONTIENE/AGRUPA TODOS LOS ELEMENTOS */
+        #container{
+            width:100%;
+        }
+        header{
+            width:100%;
+            height:250px;
+            background-color:pink;
+        }
+        section{
+            width:70%;
+            height:300px;
+            margin-top:7%;
+            background-color:brown;
+            float:right;
+        }
+        aside{
+            margin-top:7%;
+            width:30%;
+            background-color:cadetblue;
+            height:400px;
+        }
+        /* PROPIEDADES DE ESTILOS EN EL MENU */
+        nav{
+            width:100%;
+            background-color:violet;
+        }
+        /*UL */
+        #opciones{
+            width:70%;
+            padding:5%;
+            padding-left:9%;
+            float:left; /* Flota a la izquierda para poner en horizontal las li*/
+            border:1px solid black;
+            margin-left:10%;
+        }
+        /*LI*/
+        #opciones li{
+            float:left; /* Flota a la izquierda, termina de poner en horizontal las li*/
+            border:1px solid black;
+            margin-left:5%;
+            padding:5%;
+        }
+        footer{
+            height:220px;
+            width:100%;
+            background-color:black;
+            position: absolute;
+            top:200%;
+            font-size:0.9em;
+            font-family:verdana;
+        }
+        footer ul{
+            width: 20%;
+            float: left;
+            color: grey;
+            padding:2%;
+            margin-left: 5%;
+
+        }
+        footer ul a{
+            color:grey;
+        }
+        #ul1{
+            color: white;
+        }
+        footer h2{
+            color: white;
+            font-size: 0.9em;
+        }
+        footer li{
+            margin-top: 2%;
+            margin-left: 2%;
+        }
+        #ul1 li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        footer ul li a:hover{
+            color:white;
+        }
+
+        /*MEDIA QUERY a mobile*/
+        @media screen and (max-width: 760px){
+            section{
+                background-color:darkkhaki;
+            }
+            aside, section{
+                width:100%;
+            }
+            aside{
+                position:absolute;
+                top:130%;
+            }
+            #opciones{
+                width:40%;
+                margin-left:25%;
+            }
+        }
+    </style>
+    </head>
+<body>
+    <div id="container">
+        <!-- HTML5 -->
+
+        <!--CABECERA-->
+        <header>
+            <nav>
+                <!--Menu-->
+                <ul id="opciones">
+                    <li id="opcion1">Opción Menu</li>
+                    <li id="opcion2">Opción Menu</li>
+                    <li id="opcion3">Opción Menu</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section1">
+        </section>
+
+        <section id="section2">
+        </section>
+
+        <aside>
+
+        </aside>
+
+        <footer>
+            <ul id= "ul1">
+              <li><a href= "#">TARJETAS DE REGALO</a></li>
+              <li>TIENDAS MAS CERCANAS</li>
+              <li>REGÍSTRATE PARA RECIBIR CORREOS</li>
+              <li>ELECTRÓNICOS</li>
+              <li>HAZTE MIEMBRO</li>
+              <li>DESCUENTO PARA ESTUDIANTES</li>
+              <li>COMENTARIOS SOBRE LA WEB</li>  
+            </ul>    
+            <ul>
+              <h2>OBTENER AYUDA</h2>  
+              <li><a href= "#">ESTADOS DEL PEDIDO</a></li>
+              <li>ENVÍO Y ENTREGA</li>
+              <li>DEVOLUCIONES</li>
+              <li>OPCIONES DE PAGO</li>
+              <li>CONTACTAR CON NOSOTROS</li>
+            </ul>
+            <ul>
+              <h2>ACERCA DE NIKE</h2>
+              <li>NOTICIAS</li>
+              <li>EMPLEO</li>  
+              <li>INVERSORES</li>
+              <li>SOSTENIBILIDAD</li>
+            </ul>
+
+        </footer>
+
+    </div>
+    
+</body>
+</html>
